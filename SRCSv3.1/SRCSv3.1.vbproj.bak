@@ -1,0 +1,584 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7A588685-6A03-4DF9-A3B9-54C84D487298}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>SRCSv3._1.frmlogin</StartupObject>
+    <RootNamespace>SRCSv3._1</RootNamespace>
+    <AssemblyName>SRCSv3.1</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="DevExpress.BonusSkins.v17.2" />
+    <Reference Include="DevExpress.Charts.v17.2.Core, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.CodeParser.v17.2, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Dashboard.v17.2.Core, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Dashboard.v17.2.Win, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v17.2" />
+    <Reference Include="DevExpress.DataAccess.v17.2, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v17.2.UI, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Diagram.v17.2.Core, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Images.v17.2, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Map.v17.2.Core, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v17.2.Core, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v17.2.Core, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v17.2.Core, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v17.2.Core, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v17.2.Core, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.TreeMap.v17.2.Core, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v17.2" />
+    <Reference Include="DevExpress.Utils.v17.2.UI, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v17.2, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v17.2" />
+    <Reference Include="DevExpress.XtraCharts.v17.2, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v17.2.UI, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v17.2.Wizard, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraDiagram.v17.2, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v17.2" />
+    <Reference Include="DevExpress.XtraGauges.v17.2.Core, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v17.2.Presets, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGauges.v17.2.Win, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v17.2, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v17.2" />
+    <Reference Include="DevExpress.Printing.v17.2.Core" />
+    <Reference Include="DevExpress.XtraMap.v17.2, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPivotGrid.v17.2, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v17.2, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v17.2, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v17.2.Extensions, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraRichEdit.v17.2, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraRichEdit.v17.2.Extensions, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v17.2, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeMap.v17.2, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v17.2, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraWizard.v17.2, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Build" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="controllers\index.vb" />
+    <Compile Include="controllers\score\index.Score.vb" />
+    <Compile Include="controllers\settings\index.settings.vb" />
+    <Compile Include="controllers\settings\ProgramSelfOnTest.vb" />
+    <Compile Include="controllers\settings\settings.controller.vb" />
+    <Compile Include="controllers\stdClass\index.StdClass.vb" />
+    <Compile Include="controllers\stdClass\stdClass.controller.vb" />
+    <Compile Include="controllers\student\index.student.vb" />
+    <Compile Include="controllers\student\student.controller.vb" />
+    <Compile Include="controllers\subject\subject.controllers.vb" />
+    <Compile Include="controllers\user\index.user.vb" />
+    <Compile Include="controllers\user\user.controller.vb" />
+    <Compile Include="controllers\utils\index.utils.vb" />
+    <Compile Include="controllers\utils\utils.controller.vb" />
+    <Compile Include="dbDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dbDataSet.vb">
+      <DependentUpon>dbDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="frmlogin.designer.vb">
+      <DependentUpon>frmlogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmlogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainDashboard.Designer.vb">
+      <DependentUpon>MainDashboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MainDashboard.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MainForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.vb">
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controllers\score\score.controller.vb" />
+    <Compile Include="models\definition\score\score.interface.vb" />
+    <Compile Include="models\definition\settings\settings.interface.vb" />
+    <Compile Include="models\definition\student\student.interface.vb" />
+    <Compile Include="models\definition\subject\subject.interface.vb" />
+    <Compile Include="models\definition\utils\utils.interface.vb" />
+    <Compile Include="models\implementation\score\score.models.vb" />
+    <Compile Include="models\implementation\settings\settings.models.vb" />
+    <Compile Include="models\implementation\stdClass\stdClass.models.vb" />
+    <Compile Include="models\implementation\student\student.models.vb" />
+    <Compile Include="models\implementation\subject\subject.models.vb" />
+    <Compile Include="models\implementation\user\user.models.vb" />
+    <Compile Include="models\implementation\utils\utils.models.vb" />
+    <Compile Include="Program.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="testForm.Designer.vb">
+      <DependentUpon>testForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="testForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\reports\emptyCatSheetReport.designer.vb">
+      <DependentUpon>emptyCatSheetReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="views\reports\emptyCatSheetReport.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="views\reports\masterScoreReport.designer.vb">
+      <DependentUpon>masterScoreReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="views\reports\masterScoreReport.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="views\reports\allClassAvgRankedScoresReport.Designer.vb">
+      <DependentUpon>allClassAvgRankedScoresReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="views\reports\allClassAvgRankedScoresReport.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="views\reports\scoreRankingReport.Designer.vb">
+      <DependentUpon>scoreRankingReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="views\reports\scoreRankingReport.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="views\reports\thirdTermScoresReport.designer.vb">
+      <DependentUpon>thirdTermScoresReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="views\reports\thirdTermScoresReport.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="views\reports\scoresReport.designer.vb">
+      <DependentUpon>scoresReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="views\reports\scoresReport.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="views\settings\school\SessionSetupFrm.Designer.vb">
+      <DependentUpon>SessionSetupFrm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="views\settings\school\SessionSetupFrm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\settings\school\settingsView.designer.vb">
+      <DependentUpon>settingsView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="views\settings\school\settingsView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="views\subject\addDefaultSubjectView.Designer.vb">
+      <DependentUpon>addDefaultSubjectView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="views\subject\addDefaultSubjectView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="views\subject\addSubjectView.Designer.vb">
+      <DependentUpon>addSubjectView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="views\subject\addSubjectView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="views\indexForm.Designer.vb">
+      <DependentUpon>indexForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="views\indexForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\reports\reportDashboardView.Designer.vb">
+      <DependentUpon>reportDashboardView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="views\reports\reportDashboardView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="views\score\addScoresView.Designer.vb">
+      <DependentUpon>addScoresView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="views\score\addScoresView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="views\stdClass\addClassView.Designer.vb">
+      <DependentUpon>addClassView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="views\stdClass\addClassView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="views\stdClass\listAssignClassView.designer.vb">
+      <DependentUpon>listAssignClassView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="views\stdClass\listAssignClassView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="views\stdClass\promoteStudentView.Designer.vb">
+      <DependentUpon>promoteStudentView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="views\stdClass\promoteStudentView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="views\student\addStudentForm.designer.vb">
+      <DependentUpon>addStudentForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="views\student\addStudentForm.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="views\student\studentListView.designer.vb">
+      <DependentUpon>studentListView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="views\student\studentListView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="views\subject\addSubjectWizard.designer.vb">
+      <DependentUpon>addSubjectWizard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="views\subject\addSubjectWizard.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="views\settings\user\addUserView.designer.vb">
+      <DependentUpon>addUserView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="views\settings\user\addUserView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="XtraReport1.Designer.vb">
+      <DependentUpon>XtraReport1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="XtraReport1.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <EmbeddedResource Include="frmlogin.resx">
+      <DependentUpon>frmlogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainDashboard.resx">
+      <DependentUpon>MainDashboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="models\definition\stdClass\stdClass.interface.vb" />
+    <EmbeddedResource Include="testForm.resx">
+      <DependentUpon>testForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\indexForm.resx">
+      <DependentUpon>indexForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\reports\reportDashboardView.resx">
+      <DependentUpon>reportDashboardView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\score\addScoresView.resx">
+      <DependentUpon>addScoresView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\reports\emptyCatSheetReport.resx">
+      <DependentUpon>emptyCatSheetReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\reports\masterScoreReport.resx">
+      <DependentUpon>masterScoreReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\reports\allClassAvgRankedScoresReport.resx">
+      <DependentUpon>allClassAvgRankedScoresReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\reports\scoreRankingReport.resx">
+      <DependentUpon>scoreRankingReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\reports\thirdTermScoresReport.resx">
+      <DependentUpon>thirdTermScoresReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\reports\scoresReport.resx">
+      <DependentUpon>scoresReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\settings\school\SessionSetupFrm.resx">
+      <DependentUpon>SessionSetupFrm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\settings\school\settingsView.resx">
+      <DependentUpon>settingsView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\stdClass\addClassView.resx">
+      <DependentUpon>addClassView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\stdClass\listAssignClassView.resx">
+      <DependentUpon>listAssignClassView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\stdClass\promoteStudentView.resx">
+      <DependentUpon>promoteStudentView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\student\addStudentForm.resx">
+      <DependentUpon>addStudentForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\student\studentListView.resx">
+      <DependentUpon>studentListView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\subject\addDefaultSubjectView.resx">
+      <DependentUpon>addDefaultSubjectView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\subject\addSubjectView.resx">
+      <DependentUpon>addSubjectView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\subject\addSubjectWizard.resx">
+      <DependentUpon>addSubjectWizard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\settings\user\addUserView.resx">
+      <DependentUpon>addUserView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XtraReport1.resx">
+      <DependentUpon>XtraReport1.vb</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <Compile Include="controllers\subject\index.subject.vb" />
+    <None Include="dbDataSet.xsc">
+      <DependentUpon>dbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="dbDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>dbDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="dbDataSet.xss">
+      <DependentUpon>dbDataSet.xsd</DependentUpon>
+    </None>
+    <Compile Include="models\definition\user\user.interface.vb" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Unknown-user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shape 110.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shape 147.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shape 65.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shape 92.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shape 24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\administrator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lecture.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shape 1101.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\casing.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\network.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Doctor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Miss.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mrs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Owner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Professor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shape 198.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ms.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shape 70.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shape 109.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shape 39.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shape 40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\005-class.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\777-text-books.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\77777005-class.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shape 154.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\002-grade-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shape 78.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customer-service-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\email.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="views\score\dashboard\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shape 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shape 6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shape 3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\004-certificate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shape 1102.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\008-text-books.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\005-class1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001-grade.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\003-exam-results.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
